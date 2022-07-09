@@ -475,7 +475,7 @@ a img{
         --marquee-elements-displayed: 2;
     }
     .marquee-content li{
-        font-size: calc(var(--marquee-height)*1/4);
+        font-size: calc(var(--marquee-height)*1/2);
     }
     .contactos{
       text-align: center;
@@ -485,5 +485,9 @@ a img{
       margin-top: 15%;
       padding: 5% 10%;
       margin-bottom: 15%;
+    }
+
+    div .clock .small div .date{
+      font-size: 0.7rem;
     }
 }
