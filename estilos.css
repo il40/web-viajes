@@ -5,6 +5,7 @@
 body{
     
     background: #000000;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -13,7 +14,9 @@ h4{
 }
 
 
-
+.card{
+  width: 18rem;
+}
 
 :root {
   --marquee-width: 80vw;
@@ -83,7 +86,12 @@ h4{
     --marquee-height: 16vh;
     --marquee-elements-displayed: 3;
   }
-  .marquee:before, .marquee:after { width: 5rem; }
+  .marquee:before, .marquee:after { 
+    width: 5rem; 
+  }
+  .marquee-content li{
+    flex-shrink: 1;
+  }
 }
 
 .carrusel{
@@ -93,6 +101,10 @@ h4{
 .navegador{
     background: #fffffff4;
     padding: 0 10%;
+}
+
+.nav-item a {
+  color: rgba(0,0,0,); 
 }
 
 .card-body{
@@ -120,7 +132,7 @@ h4{
   background: url("img/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
 }
 .img-fluid {
@@ -135,6 +147,49 @@ a img{
 }
 .img-logo{
     max-height: 100px;
+}
+
+.horarios{
+  padding: 50px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.contactos{
+  color: #eee;
+  padding-top: 3%;
+}
+.contacto{
+  display: flex;
+}
+.contacto i{
+ font-family: 'Raleway', sans-serif;
+ font-style: normal;
+}
+
+.contacto-ubicacion{
+  margin-top: 5%;
+}
+.contacto-ubicacion li{
+  display: flex;
+  margin-bottom: 5%;
+}
+.contacto-ubicacion li i{
+  color: #007bff;
+  font-size: 25px;
+  font-weight: 100;
+}
+.contacto-ubicacion li p{
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+
+.footer{
+  margin-top: 5%;
+  margin-bottom: 0;
+  color: rgba(204, 202, 202, 0.746);
+}
+.footer p{
+  margin-bottom: 0;
 }
 
 
@@ -211,7 +266,6 @@ a img{
   }
   .btn-primary {
     color: white;
-    background-color: #2C3E50;
     border-color: #2C3E50;
     font-weight: 700;
   }
@@ -353,6 +407,13 @@ a img{
     :root {
         --marquee-elements-displayed: 3;
     }
+    .floating-label-form-group label{
+      font-size: 20px;
+    }
+    .contacto-ubicacion {
+      margin-top: 7%;
+  }
+
 }
 
 
@@ -372,6 +433,14 @@ a img{
     .marquee-content li{
         font-size: calc(var(--marquee-height)*1/4);
     }
+    .contacto-ubicacion {
+      margin-top: 15%;
+      padding-left: 15%;
+      margin-bottom: 15%;
+    }
+    form{
+      padding: 0 50px;
+    }
 }
 
 
@@ -384,10 +453,37 @@ a img{
     h4 {
         font-size: 15px;
     }
+    .navegador{
+      padding: 0 0;
+  }
+  .navbar{
+    padding: 0.3rem 0.5rem;
+  }
+  .navbar-brand{
+    padding: 0;
+  }
+  a img{
+    padding: 0;
+  }
+  .carrusel {
+    margin-top: 85px;
+}
+  .card{
+    width: 12rem;
+  }
     :root {
         --marquee-elements-displayed: 2;
     }
     .marquee-content li{
         font-size: calc(var(--marquee-height)*1/4);
+    }
+    .contactos{
+      text-align: center;
+      padding-top: 10%;
+    }
+    .contacto-ubicacion {
+      margin-top: 15%;
+      padding: 5% 10%;
+      margin-bottom: 15%;
     }
 }
